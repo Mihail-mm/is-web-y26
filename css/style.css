@@ -1,0 +1,251 @@
+body{
+    margin:0;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+    --landing-font-family: Roboto;
+}
+
+a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background: var(--main_color);
+    display: flex;
+    padding: 0 150px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    gap: 10px;
+}
+
+.logo img{
+    height: 75px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    color: var(--white-color);
+}
+
+.main {
+    height: auto;
+    width: 100%;
+    background: var(--main_color);
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/banner.jpg");
+    position: relative;
+    text-align : center;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.banner-tools {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/tool.jpg");
+    position: relative;
+    text-align : center;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.banner-tools h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner-tools p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 17px;
+}
+
+.block {
+    background: var(--main_color);
+    width: 100%;
+    height: auto;
+    padding: 25px 100px 10px;
+    box-sizing: border-box;
+}
+
+.block span {
+    font-size: 12px;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.block h5 {
+    color: var(--red-color);
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.block hr {
+    width: 90px;
+    height: 10px;
+    background: var(--red-color);
+    margin: 30px 0 0;
+    border: none;
+
+}
+
+.block p {
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+.block ul {
+    color: var(--white-color);
+}
+
+.block ul li {
+    padding: 3px;
+}
+
+.footer {
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: var(--black-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    color: var(--white-color);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer span {
+    margin-top: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer h2 {
+    color: var(--red-color);
+    padding: 0 10px;
+}
+
+.footer strong {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.equipment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.equipment .card {
+    width: 220px;
+    height: 450px;
+    color: var(--white-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.equipment .card img {
+    width: 100%;
+    height: 180px;
+}
+
+.equipment .card strong {
+    display: block;
+    margin: 10px 0;
+}
+
+.equipment .card strong {
+    color: var(--red-color);
+    display: block;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.services .service {
+    display: flex;
+    padding: 30px;
+}
+
+.services .service .image {
+    display: flex;
+    height: 200px;
+    width: 200px;
+}
+
+.services .service .text {
+    color: var(--white-color);
+    padding: 0 50px;
+    margin: 10px 20px;
+
+}
+
+.services .service .text h1 {
+    margin: 0;
+    padding: 0px;
+    color: #E64B3B;
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: left;
+    cursor: pointer;
+    display: block;
+}
+
+.services .service .text p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.footer .askii {
+    display: flex;
+    color: var(--white-color);
+    font-family: monospace;
+    font-size: 35px;
+}
