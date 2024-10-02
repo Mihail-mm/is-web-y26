@@ -180,6 +180,7 @@ a {
     width: 220px;
     height: 450px;
     color: var(--white-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .equipment .card img {
     width: 100%;
