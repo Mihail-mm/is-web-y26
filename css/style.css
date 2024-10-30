@@ -1,6 +1,6 @@
 body{
     margin:0;
-    padding: 0px;
+    padding: 0;
     font-family: 'Arial', sans-serif;
     --landing-font-family: Roboto;
 }
@@ -20,6 +20,10 @@ a {
     align-items: center;
     justify-content: space-between;
     margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -30,7 +34,7 @@ a {
 }
 
 .logo img{
-    height: 75px;
+    height: 70px;
 }
 
 .list {
@@ -45,6 +49,7 @@ a {
     width: 100%;
     background: var(--main_color);
     margin: 0;
+    padding-top: 70px;
 }
 
 .banner {
@@ -52,7 +57,7 @@ a {
     height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/banner.jpg");
     position: relative;
-    text-align : center;
+    text-align: center;
     color: var(--white-color);
     display: flex;
     flex-direction: column;
@@ -66,7 +71,7 @@ a {
     height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/tool.jpg");
     position: relative;
-    text-align : center;
+    text-align: center;
     color: var(--white-color);
     display: flex;
     flex-direction: column;
@@ -121,7 +126,6 @@ a {
     background: var(--red-color);
     margin: 30px 0 0;
     border: none;
-
 }
 
 .block p {
@@ -220,7 +224,6 @@ a {
     color: var(--white-color);
     padding: 0 50px;
     margin: 10px 20px;
-
 }
 
 .services .service .text h1 {
@@ -248,4 +251,127 @@ a {
     color: var(--white-color);
     font-family: monospace;
     font-size: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .banner, .banner-tools {
+        padding: 0 20px;
+    }
+
+    .block {
+        padding: 25px 20px 10px;
+    }
+
+    .equipment {
+        padding: 0 20px;
+    }
+
+    .services {
+        padding: 20px;
+    }
+
+    .services .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .service .text {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .askii {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-tools {
+        display: none;
+    }
+
+    .footer .askii {
+        display: none;
+    }
+}
+
+.team {
+    padding: 20px;
+    text-align: center;
+}
+
+.team table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.team th, .team td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .team table, .team thead, .team tbody, .team th, .team td, .team tr {
+        display: block;
+    }
+
+    .team thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .team tr {
+        margin: 0 0 1rem 0;
+    }
+
+    .team td {
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+
+    .team td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+.team .name {
+    color: var(--red-color)
+}
+
+.team th, .team td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.team thead {
+    background-color: var(--main_color);
+    color: #e64b3b;
+}
+
+.team tbody tr:nth-child(odd) {
+    background-color: var(--main_color);
+    color: var(--white-color);
+}
+
+.team tbody tr:nth-child(even) {
+    background-color: var(--main_color);
+    color: var(--white-color);
 }
