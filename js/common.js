@@ -21,6 +21,6 @@
 
 (function() {
     const currentPage = document.location.pathname.split('/').pop();
-    const activePage = document.getElementById(currentPage)
+    const activePage = document.getElementById(currentPage === '' ? 'index.html' : currentPage)
     activePage.children[0].classList.add('active')
 })();
