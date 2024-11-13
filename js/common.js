@@ -21,11 +21,6 @@
 
 (function() {
     const currentPage = document.location.pathname.split('/').pop();
-    const menuItems = document.querySelectorAll('.menu-item a');
-
-    menuItems.forEach(item => {
-        if (item.getAttribute('href').includes(currentPage)) {
-            item.classList.add('active');
-        }
-    });
+    const activePage = document.getElementById(currentPage)
+    activePage.children[0].classList.add('active')
 })();
