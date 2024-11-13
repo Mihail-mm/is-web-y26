@@ -24,7 +24,7 @@
     const menuItems = document.querySelectorAll('.menu-item a');
 
     menuItems.forEach(item => {
-        if (item.getAttribute('href') === currentPage) {
+        if (item.getAttribute('href').includes(currentPage)) {
             item.classList.add('active');
         }
     });
