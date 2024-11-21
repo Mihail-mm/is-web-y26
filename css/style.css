@@ -375,3 +375,12 @@ a {
     background-color: var(--main_color);
     color: var(--white-color);
 }
+
+.menu-item a.active {
+    font-weight: bold;
+    color: var(--red-color);
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
