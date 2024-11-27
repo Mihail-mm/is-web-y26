@@ -17,17 +17,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function generateReviewTable() {
-        reviewContainer.innerHTML = `
-            <table>
-                <thead>
-                    <tr>
-                        <th>Имя</th>
-                        <th>Отзыв</th>
-                    </tr>
-                </thead>
-                <tbody id="reviewTableBody"></tbody>
-            </table>
-        `;
+        const table = document.createElement('table');
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        const nameHeader = document.createElement('th');
+        const reviewHeader = document.createElement('th');
+
+        nameHeader.textContent = 'Имя';
+        reviewHeader.textContent = 'Отзыв';
+
+        headerRow.appendChild(nameHeader);
+        headerRow.appendChild(reviewHeader);
+        thead.appendChild(headerRow);
+
+        const tbody = document.createElement('tbody');
+        tbody.id = 'reviewTableBody';
+
+        table.appendChild(thead);
+        table.appendChild(tbody);
+
+        reviewContainer.innerHTML = '';
+        reviewContainer.appendChild(table);
     }
 
     function addReview(name, review) {
@@ -35,11 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const tbody = document.getElementById('reviewTableBody');
         const row = document.createElement('tr');
-
-        row.innerHTML = `
-            <td data-label="Имя">${name}</td>
-            <td data-label="Отзыв">${review}</td>
-        `;
+        const nameCell = document.createElement('td');
+        const reviewCell = document.createElement('td');
+        nameCell.textContent = name;
+        reviewCell.textContent = review;
+        row.appendChild(nameCell);
+        row.appendChild(reviewCell);
 
         tbody.appendChild(row);
     }
