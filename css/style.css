@@ -384,3 +384,39 @@ a {
 .menu-item:hover {
     text-decoration: underline;
 }
+
+#reviewForm input, #reviewForm textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#reviewForm .button {
+    background: var(--red-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#reviewContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#reviewContainer th, #reviewContainer td {
+    padding: 15px;
+    border: 1px solid var(--gray-color);
+    text-align: left;
+}
+
+#reviewContainer thead {
+    background-color: var(--main_color);
+    color: var(--red-color);
+}
