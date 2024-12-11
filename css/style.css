@@ -177,14 +177,17 @@ a {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    padding: 0 50px;
+    /* padding: 0 50px; */
 }
 
 .equipment .card {
-    width: 220px;
-    height: 450px;
+    width: 270px;
+    height: 520px;
     color: var(--white-color);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
 .equipment .card img {
     width: 100%;
@@ -419,4 +422,16 @@ a {
 #reviewContainer thead {
     background-color: var(--main_color);
     color: var(--red-color);
+}
+#loadApi, #error {
+    width: max-content;
+    margin: 0 auto;
+    font-size: 16px;
+    color: var(--white-color);
+}
+.informations {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 100px 10px;
+    box-sizing: border-box;
 }
