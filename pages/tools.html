@@ -9,7 +9,7 @@
     <link href="../css/style.css" rel="stylesheet"/>
     <link href="../css/colors.css" rel="stylesheet"/>
     <script src="../js/common.js" defer></script>
-
+    <script src="../js/api.js"></script>
 </head>
 <body>
 <header class="header">
@@ -41,8 +41,11 @@
             <p>Современный ресторан, кафетерий или столовую уже трудно представить без элементарных средств автоматизации. Будь то платежные терминалы, контрольно-кассовая техника, принтеры чеков или компьютеры-моноблоки для организации рабочего места кассира, дисплеи для покупателя или отображение электронной очереди. Даже работа официанта может быть автоматизирована использованием оборудования для конкретных целей: прием заказа от Гостя и передача данных для работы на кухню.</p>
         </div>
     </section>
-    <section class="equipment">
-        <article class="card">
+    <section class="informations">
+        <div id="loadApi">Загрузка...</div>
+        <div class="equipment" id="content"></div>
+        <div id="error">Что-то пошло не так. Попробуйте позже.</div>
+        <!-- <article class="card">
             <img src="../images/equipment1.jpg"/>
             <strong>POS-компьютер</strong>
             <em>Широкий выбор компьютеров для торговых точек. От маленького и надежного Atol Optima 12" до профессионального влагозащищенного Posiflex Core i3 15"</em>
@@ -61,7 +64,7 @@
             <img src="../images/equipment4.jpg"/>
             <strong>Фискальный регистратор</strong>
             <em>Фискальные регистраторы от простых автономных решений до премиум сегмента с поддержкой проходимости свыше 300 чеков в день</em>
-        </article>
+        </article> -->
     </section>
 </main>
 
